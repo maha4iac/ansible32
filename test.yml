@@ -1,0 +1,14 @@
+---
+studentdetails:
+  - sname: maha
+    sphno:  888888
+    address:
+      dno: 1
+      sno: 2
+      pin: 500072
+  - sname: althi
+    sphno:  99999999
+    address:
+      dno: 333
+      sno: 445
+      pin: 500072
