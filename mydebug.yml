@@ -1,5 +1,5 @@
 ---
-- hosts: all
+- hosts: webservers
   beome: yes
   tasks:
   - name: disply the  host name
