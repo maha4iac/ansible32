@@ -1,0 +1,11 @@
+---
+- hosts: all
+  beome: yes
+  tasks:
+  - name: disply the  host name
+    command: hostname -f
+    register: myresult
+  
+  - name: disply the myresult
+    debug:
+      msg: "{{ myresult }}"
