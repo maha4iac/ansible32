@@ -9,3 +9,15 @@
   - name: disply the myresult
     debug:
       msg: "{{ myresult }}"
+
+  - name: install git
+    yum:
+      name: git
+      state: present
+    when: myresult.stderr ==""
+
+  - name: install tree
+    yum:
+      name: tree
+      state: present
+    when: myresult.stderr !=""
