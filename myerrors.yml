@@ -6,10 +6,14 @@
     yum:
       name: git
       state: present
+    ignore_errors: yes
+    
   - name: install tree
     yum:
       name: tree
       statee: present
+    ignore_errors: yes
+
   - name: install wget
     yum:
       name: wget
