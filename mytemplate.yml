@@ -7,13 +7,18 @@
     yum:
       name: httpd
       state: present
-  - name: start the webservers
-    service:
-      name: httpd
-      state: started
+    notify: startwebservers
+
   - name: copy the dynamic file
     template:
       src: myindex.j2
-      dest: /var/www/html/index.html  
+      dest: /var/www/html/index.html 
+    notify: startwebservers
+
+  handlers:
+  - name: startwebservers
+    service:
+      name: httpd
+      state: started
   
   
