@@ -1,0 +1,16 @@
+---
+- hosts: webservers
+  become: yes
+  tasks:
+  - name: install  git
+    yum:
+      name: git
+      state: present
+  - name: install tree
+    yum:
+      name: tree
+      statee: present
+  - name: install wget
+    yum:
+      name: wget
+      state: present
