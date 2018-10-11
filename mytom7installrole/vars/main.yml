@@ -1,2 +1,4 @@
 ---
 # vars file for mytom7installrole
+mysqlusername: root
+mysqlpasswd:  rootroot

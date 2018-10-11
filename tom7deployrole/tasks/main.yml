@@ -1,6 +1,11 @@
 ---
 # tasks file for tom7deployrole
 
+
+
+
+
+
 - name: SKRLOGING   war in tomcat webapps folder
   get_url:
     url: https://s3-ap-southeast-1.amazonaws.com/skrit4iac/SKRLogin-1.0.war
